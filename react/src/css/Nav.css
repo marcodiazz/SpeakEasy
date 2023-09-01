@@ -6,4 +6,29 @@ nav{
     align-items: center;
     padding-block: 20px;
     padding-inline: 30px;
+    width: 100%;
+}
+
+.pink{
+    color: var(--accent-color);
+}
+
+.menuList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-weight: 600;
+    
+}
+li{
+    padding: 10px;
+    border-radius: 10px;
+}
+li:hover{
+    background: var(--accent-color);
+    transition: 0.6s ease-out;
+    cursor: pointer;
+    
 }
