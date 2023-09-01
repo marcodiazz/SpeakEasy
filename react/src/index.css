@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  --main-bg-color: #0d0d1e;
+  --accent-color: #DF19B1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
