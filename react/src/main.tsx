@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <Index />
       },
       {
-        path: "team",
+        path: "vocabulary",
         element: <Vocabulary />,
       },
     ],

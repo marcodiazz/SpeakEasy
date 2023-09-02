@@ -1,26 +1,2 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-
-.pink{
-    color: var(--accent-color);
-}
-
-.menuList{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    list-style: none;
-    font-weight: 600;
-    
-}
-li{
-    padding: 10px;
-    border-radius: 10px;
-}
-li:hover{
-    background: var(--accent-color);
-    transition: 0.6s ease-out;
-    cursor: pointer;
-    
-}

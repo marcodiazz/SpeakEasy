@@ -6,7 +6,7 @@ nav{
     align-items: center;
     padding-block: 20px;
     padding-inline: 30px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .pink{
@@ -31,4 +31,9 @@ li:hover{
     transition: 0.6s ease-out;
     cursor: pointer;
     
+}
+
+.nav__link{
+    text-decoration: none;
+    color: white;
 }
