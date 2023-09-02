@@ -1,30 +1,13 @@
-// import { useState} from 'react';
-
 export function useGenerateWord(){
-    // const [repeatedWords, setRepetedWords] = useState([])
-    // let englishWord, spanishWord;
-    // do {
-    //     const index = getRandomNumber(0, englishVocabulary.length);
-    //     spanishWord = spanishVocabulary[index];
-    //     englishWord = englishVocabulary[index]
-    //     console.log(index)
-    //     console.log(englishWord)
-    //     console.log(repeatedWords)
-
-    // }
-    // while(repeatedWords.includes(englishWord))
-
-    // setRepetedWords([...repeatedWords, englishWord])
-
     const index = getRandomNumber(0, englishVocabulary.length);
-     const spanishWord = spanishVocabulary[index];
-     const englishWord = englishVocabulary[index]
+    const spanishWord = spanishVocabulary[index];
+    const englishWord = englishVocabulary[index]
     return [spanishWord, englishWord]
 }
 function getRandomNumber(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-const englishVocabulary = [
+export const englishVocabulary = [
     "ability",
     "abroad",
     "absence",
