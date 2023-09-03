@@ -1,6 +1,4 @@
-
 nav{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +8,7 @@ nav{
 }
 
 .pink{
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .menuList{
@@ -26,12 +24,13 @@ li{
     padding: 10px;
     border-radius: 10px;
 }
-li:hover{
-    background: var(--accent-color);
+/* li:hover{
     transition: 0.6s ease-out;
     cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration: #df19b1;
     
-}
+} */
 
 .nav__link{
     text-decoration: none;

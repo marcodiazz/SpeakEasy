@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/Nav.css'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBook, faSpellCheck, faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 export const Nav = () => {
   return (
@@ -8,9 +10,10 @@ export const Nav = () => {
         <h1>Speak<span className="pink">Easy</span></h1>
         <div className="menu">
             <ul className="menuList">
-                <li><Link className='nav__link' to={"/vocabulary"} >Vocabulary</Link></li>
-                <li>Grammar</li>
-                <li>Topics</li>
+                <li><Link className='nav__link underline' to={"/vocabulary"} ><FontAwesomeIcon icon={faBook} style={{color: "#ffffff",}} /> Vocabulary</Link></li>
+                <li><Link className='nav__link underline' to={"/vocabulary"} ><FontAwesomeIcon icon={faSpellCheck} style={{color: "#ffffff",}} /> Grammar</Link></li>
+                <li><Link className='nav__link underline' to={"/prizes"} ><FontAwesomeIcon icon={faTrophy} style={{color: "#ffffff",}} /> Prizes</Link></li>
+                
             </ul>
         </div>
     </nav>
