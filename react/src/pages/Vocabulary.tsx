@@ -35,6 +35,7 @@ import { useStoreWords } from '../hooks/useStoreWords'
       {showWords &&
         <p>{showWords[0]}</p>
       }
+      <input type="text" />
     <button onClick={() => setCounter(counter + 1)}>Generate word</button>
     </div>
 
