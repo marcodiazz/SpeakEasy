@@ -154,7 +154,7 @@ export const englishVocabulary = [
     "celery",
     "flatten",
     "crush",
-    "applaud",
+    "clap",
     "apply",
     "bet",
     "support",

@@ -30,13 +30,14 @@ import { useStoreWords } from '../hooks/useStoreWords'
   
   function checkAnswer(e){
     // e.preventDefault();
-    if(answerSubmit == showWords[1]){
+    if(e.target.value == showWords[1]){
       setCounter(counter + 1)
+      e.target.value = ""
     }
     setAnswer(e.target.value)
    
     console.log("Counter: " + counter)
-    console.log("Answer: " + answerSubmit)
+    console.log("Answer: " + e.target.value)
 
   }
 
@@ -47,12 +48,14 @@ import { useStoreWords } from '../hooks/useStoreWords'
       {showWords &&
         <p className='vocabulary__spanishword'>{showWords[0]}</p>
       }
-      <input type="text" onChange={(e)=>{checkAnswer(e)}} />
+      <p className='vocabulary__points'>{counter}</p>
+    </div>
+      <input type="text" placeholder='Answer' onChange={(e)=>{checkAnswer(e)}} />
       {showWords &&
         <p className='vocabulary__englishword'>{showWords[1]}</p>
       }
     <button onClick={() => setCounter(counter + 1)}>Generate word</button>
-    </div>
+    
 
     </div>
   )

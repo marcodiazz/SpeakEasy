@@ -18,10 +18,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #2f2f7c;
+    background: #491cc5e2;
     padding: 20px;
     border-radius: 15px;
     margin-top: 20px;
+    border: 2px solid white;
+    box-shadow: 4px 4px var(--primary-color);
 }
 
 .prizes__imgPrize{
@@ -30,11 +32,26 @@
     border-radius: 5px;
 }
 h2{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 h3{
     background: white;
     padding-inline: 10px;
     padding-block: 5px;
     border-radius: 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .prizes__row{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .prizes__imgPrize{
+        width: 250px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
 }
