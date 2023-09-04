@@ -48,14 +48,18 @@ import { useStoreWords } from '../hooks/useStoreWords'
       {showWords &&
         <p className='vocabulary__spanishword'>{showWords[0]}</p>
       }
-      <p className='vocabulary__points'>{counter}</p>
     </div>
-      <input type="text" placeholder='Answer' onChange={(e)=>{checkAnswer(e)}} />
-      {showWords &&
+    {showWords &&
         <p className='vocabulary__englishword'>{showWords[1]}</p>
       }
-    <button onClick={() => setCounter(counter + 1)}>Generate word</button>
     
+      <input type="text" placeholder='Answer' onChange={(e)=>{checkAnswer(e)}} />
+
+    
+    <div className='vocabulary__spanishword_container'>
+    <button onClick={() => setCounter(counter + 1)}>Generate word</button>
+    <p className='vocabulary__points'>{counter}</p>
+      </div>
 
     </div>
   )
