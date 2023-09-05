@@ -28,8 +28,8 @@ import { useStoreWords } from '../hooks/useStoreWords'
   }, [counter])
   
   function checkAnswer(e){
-    // e.preventDefault();
-    if(e.target.value == showWords[1]){
+    e.preventDefault();
+    if(e.target.value.toLowerCase() == showWords[1]){
       setCounter(counter + 1)
       e.target.value = ""
     }
@@ -47,9 +47,12 @@ import { useStoreWords } from '../hooks/useStoreWords'
         <p className='vocabulary__spanishword'>{showWords[0]}</p>
       }
     </div>
-    {showWords &&
-        <p className='vocabulary__englishword'>{showWords[1]}</p>
-      }
+    <div className='vocabulary__answers_container'>
+      <button>Show Answer</button>
+      {showWords &&
+          <p className='vocabulary__englishword'>{showWords[1]}</p>
+        }
+    </div>
     
       <input type="text" placeholder='Answer' onChange={(e)=>{checkAnswer(e)}} />
 
