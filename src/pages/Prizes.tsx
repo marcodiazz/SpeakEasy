@@ -1,4 +1,4 @@
-import '../css/prizes.css'
+import '../css/Prizes.css'
 import { PrizeCard } from '../components/PrizeCard'
 export function Prizes(){
   return (
