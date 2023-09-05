@@ -1,4 +1,3 @@
-import React from 'react'
 import '../css/prizes.css'
 import { PrizeCard } from '../components/PrizeCard'
 export function Prizes(){

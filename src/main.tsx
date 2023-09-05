@@ -5,7 +5,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Vocabulary } from './pages/Vocabulary.tsx'
 import { Index } from './pages/Index.tsx'
-import { Prizes } from './pages/prizes.tsx'
+import { Prizes } from './pages/Prizes.tsx'
 
 const router = createBrowserRouter([
   {

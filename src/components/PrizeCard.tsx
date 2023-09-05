@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function PrizeCard (props){
     const baseUrl = '/src/assets/';
     return (

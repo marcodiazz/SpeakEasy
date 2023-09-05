@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import "../css/Vocabulary.css"
 import { useGenerateWord, englishVocabulary } from '../hooks/useGenerateWord'
 import { useStoreWords } from '../hooks/useStoreWords'
@@ -9,7 +9,6 @@ import { useStoreWords } from '../hooks/useStoreWords'
   const reset = useStoreWords((state) => state.reset)
   const [showWords, setShowWords] = useState([]);
   const [counter, setCounter] = useState(0);
-  const [answerSubmit, setAnswer] = useState("")
 
   useEffect(() => {
     let wordsSpanglish;
@@ -34,7 +33,6 @@ import { useStoreWords } from '../hooks/useStoreWords'
       setCounter(counter + 1)
       e.target.value = ""
     }
-    setAnswer(e.target.value)
    
     console.log("Counter: " + counter)
     console.log("Answer: " + e.target.value)
