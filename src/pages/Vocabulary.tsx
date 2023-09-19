@@ -48,7 +48,7 @@ import { useStoreWords } from '../hooks/useStoreWords'
       }
     </div>
     <div className='vocabulary__answers_container'>
-      <button>Show Answer</button>
+      
       {showWords &&
           <p className='vocabulary__englishword'>{showWords[1]}</p>
         }
